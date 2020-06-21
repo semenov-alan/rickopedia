@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../styles/tabStyles.css";
 import "../styles/buttonStyles.css";
 import "../styles/formStyles.css";
@@ -11,7 +11,7 @@ import NavigationBar from "./NavBar";
 import AdminPage from "./AdminPage";
 import DeleteBank from "./DeleteBank";
 import BankOperations from "./BankOperations";
-import { Link } from "react-router-dom";
+
 import "../styles/tabStyles.css";
 import "../styles/buttonStyles.css";
 import "../styles/formStyles.css";
@@ -19,7 +19,7 @@ import { Button } from "reactstrap";
 export default class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL + "/about"}>
         <div>
           <NavigationBar />
 
@@ -27,25 +27,25 @@ export default class App extends React.Component {
             <Route exact path={process.env.PUBLIC_URL + "/"}>
               <MainPage />
             </Route>
-            <Route path="./test">
+            <Route path="/test">
               <TestPage />
             </Route>
-            <Route path="./about">
+            <Route path="/about">
               <AboutPage />
             </Route>
-            <Route path="./calculator">
+            <Route path="/calculator">
               <RateCalculator />
             </Route>
-            <Route path="./admin_pass">
+            <Route path="/admin_pass">
               <AdminPage />
             </Route>
-            <Route path="./delete-bank">
+            <Route path="/delete-bank">
               <DeleteBank />
             </Route>
-            <Route path="./new-bank">
+            <Route path="/new-bank">
               <BankOperations />
             </Route>
-            <Route path="./edit-bank">
+            <Route path="/edit-bank">
               <BankOperations />
             </Route>
           </Switch>
