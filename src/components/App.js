@@ -25,32 +25,32 @@ export default class App extends React.Component {
           <div>
             <h1>Welcome, let's start!</h1>
             <Link to="/test">
-              <Button className="btn-about">Перейти к тесту</Button>
+              <Button>Перейти к тесту</Button>
             </Link>
           </div>
           <Switch>
-            <Route exact path="/tensorProject/">
+            <Route exact path="./">
               <MainPage />
             </Route>
-            <Route path="/test">
+            <Route path="./test">
               <TestPage />
             </Route>
-            <Route path="/about">
+            <Route path="./about">
               <AboutPage />
             </Route>
-            <Route path="/calculator">
+            <Route path="./calculator">
               <RateCalculator />
             </Route>
-            <Route path="/admin_pass">
+            <Route path="./admin_pass">
               <AdminPage />
             </Route>
-            <Route path="/delete-bank">
+            <Route path="./delete-bank">
               <DeleteBank />
             </Route>
-            <Route path="/new-bank">
+            <Route path="./new-bank">
               <BankOperations />
             </Route>
-            <Route path="/edit-bank">
+            <Route path="./edit-bank">
               <BankOperations />
             </Route>
           </Switch>
