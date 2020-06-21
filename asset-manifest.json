@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tensorProject/static/css/main.cebca18c.chunk.css",
+    "main.js": "/tensorProject/static/js/main.77aaf6a0.chunk.js",
+    "main.js.map": "/tensorProject/static/js/main.77aaf6a0.chunk.js.map",
+    "runtime-main.js": "/tensorProject/static/js/runtime-main.b2f4fbe1.js",
+    "runtime-main.js.map": "/tensorProject/static/js/runtime-main.b2f4fbe1.js.map",
+    "static/js/2.474c02da.chunk.js": "/tensorProject/static/js/2.474c02da.chunk.js",
+    "static/js/2.474c02da.chunk.js.map": "/tensorProject/static/js/2.474c02da.chunk.js.map",
+    "index.html": "/tensorProject/index.html",
+    "precache-manifest.593e88128c96c2fdf51bd0a1f972aa57.js": "/tensorProject/precache-manifest.593e88128c96c2fdf51bd0a1f972aa57.js",
+    "service-worker.js": "/tensorProject/service-worker.js",
+    "static/css/main.cebca18c.chunk.css.map": "/tensorProject/static/css/main.cebca18c.chunk.css.map",
+    "static/js/2.474c02da.chunk.js.LICENSE.txt": "/tensorProject/static/js/2.474c02da.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/tensorProject/static/media/logo.a80683c8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2f4fbe1.js",
+    "static/js/2.474c02da.chunk.js",
+    "static/css/main.cebca18c.chunk.css",
+    "static/js/main.77aaf6a0.chunk.js"
+  ]
+}
