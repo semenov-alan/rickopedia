@@ -10,12 +10,12 @@ export default class NavigationBar extends React.Component {
   render() {
     return (
       <nav className="nav-bar">
-        <Link to="/">
+        <Link to="/tensorProject">
           <img src={ReactLogo} className="App-logo" alt="React Logo" />
         </Link>
         <ul className="nav-links">
           <li className="nav-elements">
-            <Link className="text-links" to="/">
+            <Link className="text-links" to="/tensorProject">
               Главная
             </Link>
           </li>
