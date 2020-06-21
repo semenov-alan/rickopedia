@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../styles/tabStyles.css";
 import "../styles/buttonStyles.css";
 import "../styles/formStyles.css";
@@ -19,17 +19,12 @@ import { Button } from "reactstrap";
 export default class App extends React.Component {
   render() {
     return (
-      <Router
-        basename={"https://semenov-alan.github.io/tensorProject" + "/about"}
-      >
+      <Router basename={"/"}>
         <div>
           <NavigationBar />
 
           <Switch>
-            <Route
-              exact
-              path={"https://semenov-alan.github.io/tensorProject" + "/"}
-            >
+            <Route exact path="/">
               <MainPage />
             </Route>
             <Route path="/test">
