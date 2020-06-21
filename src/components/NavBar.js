@@ -34,6 +34,11 @@ export default class NavigationBar extends React.Component {
               Скоринговый тест
             </Link>
           </li>
+          <li className="nav-elements">
+            <Link className="text-links" to="/admin_pass">
+              Панель администратора
+            </Link>
+          </li>
         </ul>
       </nav>
     );
