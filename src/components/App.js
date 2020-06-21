@@ -18,7 +18,7 @@ export default class App extends React.Component {
         <div>
           <NavigationBar />
           <Switch>
-            <Route exact path="/tensorProject">
+            <Route exact path="/tensorProject/">
               <MainPage />
             </Route>
             <Route path="/test">
