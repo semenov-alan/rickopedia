@@ -10,12 +10,15 @@ export default class NavigationBar extends React.Component {
   render() {
     return (
       <nav className="nav-bar">
-        <Link to={process.env.PUBLIC_URL + "/"}>
+        <Link to={"https://semenov-alan.github.io/tensorProject" + "/"}>
           <img src={ReactLogo} className="App-logo" alt="React Logo" />
         </Link>
         <ul className="nav-links">
           <li className="nav-elements">
-            <Link className="text-links" to={process.env.PUBLIC_URL + "/"}>
+            <Link
+              className="text-links"
+              to={"https://semenov-alan.github.io/tensorProject" + "/"}
+            >
               Главная
             </Link>
           </li>

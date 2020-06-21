@@ -19,12 +19,17 @@ import { Button } from "reactstrap";
 export default class App extends React.Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL + "/about"}>
+      <Router
+        basename={"https://semenov-alan.github.io/tensorProject" + "/about"}
+      >
         <div>
           <NavigationBar />
 
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL + "/"}>
+            <Route
+              exact
+              path={"https://semenov-alan.github.io/tensorProject" + "/"}
+            >
               <MainPage />
             </Route>
             <Route path="/test">
