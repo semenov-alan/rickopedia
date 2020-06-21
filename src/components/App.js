@@ -11,12 +11,23 @@ import NavigationBar from "./NavBar";
 import AdminPage from "./AdminPage";
 import DeleteBank from "./DeleteBank";
 import BankOperations from "./BankOperations";
+import { Link } from "react-router-dom";
+import "../styles/tabStyles.css";
+import "../styles/buttonStyles.css";
+import "../styles/formStyles.css";
+import { Button } from "reactstrap";
 export default class App extends React.Component {
   render() {
     return (
       <Router>
         <div>
           <NavigationBar />
+          <div>
+            <h1>Welcome, let's start!</h1>
+            <Link to="/test">
+              <Button className="btn-about">Перейти к тесту</Button>
+            </Link>
+          </div>
           <Switch>
             <Route exact path="/tensorProject/">
               <MainPage />
