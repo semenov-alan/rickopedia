@@ -251,7 +251,7 @@ export default class BankOperations extends React.Component {
   SendRequest() {
     let xhr = new XMLHttpRequest();
     let url = "";
-    window.location.pathname = "/new_bank"
+    window.location.pathname == "/new-bank"
       ? (url = "https://twa-banking.herokuapp.com/create_bank")
       : (url = "https://twa-banking.herokuapp.com/update_bank");
     let body = {

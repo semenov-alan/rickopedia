@@ -4,8 +4,8 @@ export default class ResponseShow extends React.Component {
   render() {
     let response = JSON.parse(this.props.response);
     return (
-      <div>
-        {window.location.pathname == "/new_bank" ? (
+      <>
+        {window.location.pathname == "/new-bank" ? (
           response ? (
             <h3>Банк успешно создан</h3>
           ) : (
@@ -16,7 +16,7 @@ export default class ResponseShow extends React.Component {
         ) : (
           <h3>Банк с таким именем не найден</h3>
         )}
-      </div>
+      </>
     );
   }
 }
