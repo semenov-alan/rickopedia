@@ -22,14 +22,9 @@ export default class App extends React.Component {
       <Router>
         <div>
           <NavigationBar />
-          <div>
-            <h1>Welcome, let's start!</h1>
-            <Link to="/test">
-              <Button>Перейти к тесту</Button>
-            </Link>
-          </div>
+
           <Switch>
-            <Route exact path="./">
+            <Route exact path={process.env.PUBLIC_URL + "/"}>
               <MainPage />
             </Route>
             <Route path="./test">
