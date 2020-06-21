@@ -1,0 +1,58 @@
+.tabs {
+  font-family: arial;
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.about-text-1 {
+  margin-top: 25px;
+  font-size: 10px;
+  padding: 10px 1.5rem;
+}
+
+.about-text-1-bck {
+  margin-top: 25px;
+  font-size: 10px;
+  background: linear-gradient(-315deg, #181964, #0045a0);
+  padding: 10px 1.5rem;
+  color: white;
+}
+
+.about-text-2 {
+  font-size: 10px;
+  padding: 10px 1.5rem;
+}
+
+.about-text-2-bck {
+  font-size: 10px;
+  background: linear-gradient(-315deg, #181964, #0045a0);
+  padding: 10px 1.5rem;
+  color: white;
+}
+
+.about-text-3-bck {
+  font-size: 10px;
+
+  padding: 10px 1.5rem;
+  color: white;
+}
+
+button {
+  margin-right: 1px;
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.active {
+  border-bottom: 1px solid #42b3f4;
+  color: black;
+}
