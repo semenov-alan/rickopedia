@@ -34,7 +34,7 @@ export default class MainPage extends React.Component {
                   Изменить информацию существующего в системе банка
                 </p>
                 <Link className="link-main" to="./edit-bank">
-                  Начать тестирование
+                  Перейти
                 </Link>
               </div>
             </div>
