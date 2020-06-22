@@ -2,21 +2,32 @@
 * {
   font-family: "Montserrat-Medium", sans-serif;
 }
+
 html {
   font-size: 20px;
 }
+
 p {
   font-size: 2rem;
   margin-bottom: -10px !important;
   color: #fff;
 }
+
+.calc-h4 {
+  font-size: 1rem;
+  margin-bottom: -10px !important;
+  color: #fff;
+}
+
 .credit-calc-h4 {
   color: #fff;
 }
+
 h2 {
   color: #fff;
   font-size: 2rem;
 }
+
 small {
   font-weight: lighter;
   color: rgb(192, 192, 192);
@@ -36,7 +47,6 @@ small {
   background: linear-gradient(-315deg, #181964, #0045a0);
   text-align: center;
   padding: 2rem;
-
   width: 19rem;
   margin: 120px auto;
   box-shadow: 5px 5px 50px -20px;
