@@ -3,7 +3,7 @@ import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../styles/tabStyles.css";
 import "../styles/buttonStyles.css";
 import "../styles/formStyles.css";
-import TestPage from "../TestPage";
+import TestPage from "./TestPage";
 import MainPage from "./MainPage";
 import AboutPage from "./AboutPage";
 import RateCalculator from "./RateCalculator";
@@ -12,9 +12,6 @@ import AdminPage from "./AdminPage";
 import DeleteBank from "./DeleteBank";
 import BankOperations from "./BankOperations";
 
-import "../styles/tabStyles.css";
-import "../styles/buttonStyles.css";
-import "../styles/formStyles.css";
 import { Button } from "reactstrap";
 export default class App extends React.Component {
   render() {

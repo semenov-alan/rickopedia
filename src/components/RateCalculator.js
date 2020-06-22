@@ -21,13 +21,13 @@ export default class RateCalculator extends React.Component {
 
     return (
       <div className="App">
-        <h4>Необходимая сумма кредита </h4>
+        <h4 className="credit-calc-h4">Необходимая сумма кредита </h4>
         <h2>{amountValue} Р.</h2>
         <RangeSlider
           value={amountValue}
           onChange={(changeEvent) => amountValue(changeEvent.target.value)}
         />
-        <h4>Срок кредита: {yearsValue} г.</h4>
+        <h4 className="credit-calc-h4">Срок кредита: {yearsValue} г.</h4>
         <RangeSlider
           step={0.5}
           maxValue={5}
