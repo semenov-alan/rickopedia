@@ -16,7 +16,7 @@ export default class MainPage extends React.Component {
               <div class="content">
                 <h2 className="main_h2">#1</h2>
 
-                <h3>Основная информацияz</h3>
+                <h3>Основная информация</h3>
                 <p className="main-p">
                   Информация по системе кредитного скоринга
                 </p>

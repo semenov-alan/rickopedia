@@ -1,75 +1,104 @@
-import React from "react";
-
+import React, { useState } from "react";
+import InputRange from "react-input-range";
+import "../styles/calc.css";
+import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
+import RangeSlider from "react-bootstrap-range-slider";
 export default class RateCalculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      rate: 0,
-      sum: 0,
-      duration: 0,
-      payment: undefined,
-    };
+  state = {
+    amountValue: 5000,
+    yearsValue: 1,
+  };
 
-    this.handleSumInput = this.handleSumInput.bind(this);
-    this.handleDurationInput = this.handleDurationInput.bind(this);
-    this.handleRateInput = this.handleRateInput.bind(this);
-    this.calculatePayment = this.calculatePayment.bind(this);
-  }
-
-  handleRateInput(e) {
-    this.setState({
-      rate: Number(e.target.value),
-    });
-  }
-
-  handleSumInput(e) {
-    this.setState({
-      sum: Number(e.target.value),
-    });
-  }
-
-  handleDurationInput(e) {
-    this.setState({
-      duration: Number(e.target.value),
-    });
-  }
-
-  calculatePayment() {
-    let i = this.state.rate / 1200;
-    let n = this.state.duration;
-    let k = (i * (1 + i) ** n) / ((1 + i) ** n - 1);
-    let payment = this.state.sum * k;
-    this.setState({
-      payment: Math.round(payment),
-    });
-  }
+  handleAmountChange = (value) => {
+    this.setState({ amountValue: value });
+  };
+  handleYearChange = (value) => {
+    this.setState({ yearsValue: value });
+  };
 
   render() {
-    return (
-      <form>
-        <input id="sum" />
+    let { amountValue, yearsValue } = this.state;
 
-        <br />
-        <input id="range" type="range" />
-        <label>
-          Ставка по кредиту {this.state.rate}
-          <input onChange={this.handleRateInput} />
-        </label>
-        <label>
-          Сумма кредита {this.state.sum}
-          <input onChange={this.handleSumInput} />
-        </label>
-        <label>
-          Срок кредитования в месяцах {this.state.duration}
-          <input onChange={this.handleDurationInput} />
-        </label>
-        <div>
-          <button onClick={this.calculatePayment}>Рассчитать</button>
-          <h3>Ежемесячный платеж составит {this.state.payment} рублей</h3>
-        </div>
-        <h4 class="calculator-title">Кредитный калькулятор</h4>
-        <button className="btn">Рассчитать кредит</button>
-      </form>
+    return (
+      <div className="App">
+        <h4>Необходимая сумма кредита </h4>
+        <h2>{amountValue} Р.</h2>
+        <RangeSlider
+          value={amountValue}
+          onChange={(changeEvent) => amountValue(changeEvent.target.value)}
+        />
+        <h4>Срок кредита: {yearsValue} г.</h4>
+        <RangeSlider
+          step={0.5}
+          maxValue={5}
+          minValue={1}
+          value={yearsValue}
+          onChange={this.handleYearChange}
+        />
+        <Display years={yearsValue} amount={amountValue} />
+      </div>
     );
   }
 }
+
+class Display extends React.Component {
+  state = {
+    APR: 0.05,
+  };
+
+  componentDidUpdate(prevProps) {
+    if (prevProps !== this.props) {
+      this.calculateAPR();
+    }
+  }
+
+  calculateAPR = () => {
+    let { amount } = this.props;
+
+    if (1000 < amount && amount < 5000) {
+      this.setState({ APR: 0.05 });
+    }
+    if (5000 < amount && amount < 10000) {
+      this.setState({ APR: 0.1 });
+    }
+    if (10000 < amount && amount < 15000) {
+      this.setState({ APR: 0.15 });
+    }
+    if (15000 < amount && amount < 20000) {
+      this.setState({ APR: 0.2 });
+    }
+  };
+
+  calculateMonthlyRepayment = () => {
+    let { amount, years } = this.props;
+    let decimalFormat = this.state.APR + 1;
+    let totalOwed = decimalFormat * amount;
+    let monthlyRepayment = totalOwed / (years * 12);
+
+    return <p>{Math.round(monthlyRepayment)} Р.</p>;
+  };
+
+  percentageAPR = () => {
+    return <p>{this.state.APR * 100}%</p>;
+  };
+
+  render() {
+    return (
+      <div className="flex">
+        <DisplayChild func={this.percentageAPR()} text="Ставка по кредиту" />
+        <DisplayChild
+          func={this.calculateMonthlyRepayment()}
+          text="Ежемесячный платеж"
+        />
+      </div>
+    );
+  }
+}
+
+const DisplayChild = ({ func, text }) => {
+  return (
+    <span>
+      {func} <small>{text}</small>
+    </span>
+  );
+};

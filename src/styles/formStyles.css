@@ -96,6 +96,7 @@
   color: #333333;
   text-align: center;
 }
+
 .main-base-title {
   margin-top: 35px;
   color: #333333;
@@ -128,6 +129,7 @@
 .box {
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: 5px 5px 30px -20px;
 }
 .container .box {
   position: relative;

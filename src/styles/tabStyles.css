@@ -14,26 +14,27 @@
 
 .about-text-1-bck {
   margin-top: 25px;
-  font-size: 10px;
+  font-size: 20px;
   background: linear-gradient(-315deg, #181964, #0045a0);
   padding: 10px 1.5rem;
   color: white;
 }
 
 .about-text-2 {
-  font-size: 10px;
+  font-size: 20px;
   padding: 10px 1.5rem;
+  color: #333;
 }
 
 .about-text-2-bck {
-  font-size: 10px;
+  font-size: 20px;
   background: linear-gradient(-315deg, #181964, #0045a0);
   padding: 10px 1.5rem;
   color: white;
 }
 
 .about-text-3-bck {
-  font-size: 10px;
+  font-size: 20px;
 
   padding: 10px 1.5rem;
   color: white;
@@ -41,7 +42,7 @@
 
 button {
   margin-right: 1px;
-  font-size: 12px;
+  font-size: 20px;
   background: transparent;
   border: none;
   outline: none;
