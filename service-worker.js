@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tensorProject/precache-manifest.070410768408d907e23c4bc86c91921e.js"
+  "/tensorProject/precache-manifest.b85f8a37eebd9e4ccac5127851680754.js"
 );
 
 self.addEventListener('message', (event) => {

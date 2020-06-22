@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/tensorProject/static/css/main.1fe6c8aa.chunk.css",
-    "main.js": "/tensorProject/static/js/main.44efc696.chunk.js",
-    "main.js.map": "/tensorProject/static/js/main.44efc696.chunk.js.map",
+    "main.css": "/tensorProject/static/css/main.ad5a776f.chunk.css",
+    "main.js": "/tensorProject/static/js/main.0398b5ba.chunk.js",
+    "main.js.map": "/tensorProject/static/js/main.0398b5ba.chunk.js.map",
     "runtime-main.js": "/tensorProject/static/js/runtime-main.b2f4fbe1.js",
     "runtime-main.js.map": "/tensorProject/static/js/runtime-main.b2f4fbe1.js.map",
-    "static/js/2.083a43ea.chunk.js": "/tensorProject/static/js/2.083a43ea.chunk.js",
-    "static/js/2.083a43ea.chunk.js.map": "/tensorProject/static/js/2.083a43ea.chunk.js.map",
+    "static/css/2.d219d102.chunk.css": "/tensorProject/static/css/2.d219d102.chunk.css",
+    "static/js/2.23311811.chunk.js": "/tensorProject/static/js/2.23311811.chunk.js",
+    "static/js/2.23311811.chunk.js.map": "/tensorProject/static/js/2.23311811.chunk.js.map",
     "index.html": "/tensorProject/index.html",
-    "precache-manifest.070410768408d907e23c4bc86c91921e.js": "/tensorProject/precache-manifest.070410768408d907e23c4bc86c91921e.js",
+    "precache-manifest.b85f8a37eebd9e4ccac5127851680754.js": "/tensorProject/precache-manifest.b85f8a37eebd9e4ccac5127851680754.js",
     "service-worker.js": "/tensorProject/service-worker.js",
-    "static/css/main.1fe6c8aa.chunk.css.map": "/tensorProject/static/css/main.1fe6c8aa.chunk.css.map",
-    "static/js/2.083a43ea.chunk.js.LICENSE.txt": "/tensorProject/static/js/2.083a43ea.chunk.js.LICENSE.txt",
+    "static/css/2.d219d102.chunk.css.map": "/tensorProject/static/css/2.d219d102.chunk.css.map",
+    "static/css/main.ad5a776f.chunk.css.map": "/tensorProject/static/css/main.ad5a776f.chunk.css.map",
+    "static/js/2.23311811.chunk.js.LICENSE.txt": "/tensorProject/static/js/2.23311811.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/tensorProject/static/media/logo.a80683c8.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b2f4fbe1.js",
-    "static/js/2.083a43ea.chunk.js",
-    "static/css/main.1fe6c8aa.chunk.css",
-    "static/js/main.44efc696.chunk.js"
+    "static/css/2.d219d102.chunk.css",
+    "static/js/2.23311811.chunk.js",
+    "static/css/main.ad5a776f.chunk.css",
+    "static/js/main.0398b5ba.chunk.js"
   ]
 }
